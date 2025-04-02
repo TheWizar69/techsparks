@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - TechSparks 2025</title>
+  <meta name="description" content="Register for TechSparks 2025">
+  <link rel="stylesheet" href="/TechSparks-2K25/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <a href="/TechSparks-2K25/index.html" class="logo">TECH<span class="text-primary">SPARKS</span></a>
+        
+        <div class="nav-links">
+          <a href="/TechSparks-2K25/index.html">Home</a>
+          <a href="events.html">Events</a>
+          <a href="schedule.html">Schedule</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="register.html" class="btn btn-primary">REGISTER</a>
+        </div>
+        
+        <button class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <a href="/TechSparks-2K25/index.html">Home</a>
+      <a href="events.html">Events</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="register.html" class="btn btn-primary">REGISTER</a>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <div class="text-center">
+          <h1>REGISTER</h1>
+          <p style="margin-top: 1rem;">
+            Join us for TechSparks 2025 on April 22nd, 2025
+          </p>
+        </div>
+
+        <div style="max-width: 800px; margin: 2rem auto;">
+          <div class="steps">
+            <div class="step active">1</div>
+            <div class="step">2</div>
+            <div class="step">3</div>
+          </div>
+          <div class="step-progress">
+            <div class="step-progress-bar" style="width: 0%;"></div>
+          </div>
+
+          <div class="neo-brutalism" style="padding: 1.5rem;">
+            <div id="registration-form">
+              <!-- Step 1: Personal Information -->
+              <div class="registration-step">
+                <h2>Personal Information</h2>
+                <form style="margin-top: 1.5rem;">
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="first-name">First Name</label>
+                      <input type="text" id="first-name" placeholder="First Name" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="last-name">Last Name</label>
+                      <input type="text" id="last-name" placeholder="Last Name" required>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" placeholder="Your Phone Number" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="college">College/University</label>
+                    <input type="text" id="college" placeholder="Your College/University" required>
+                  </div>
+                  <div class="form-group">
+                    <label>Year of Study</label>
+                    <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 0.5rem;">
+                      <div class="radio-group">
+                        <input type="radio" id="year-1" name="year" value="1" checked>
+                        <label for="year-1">1</label>
+                      </div>
+                      <div class="radio-group">
+                        <input type="radio" id="year-2" name="year" value="2">
+                        <label for="year-2">2</label>
+                      </div>
+                      <div class="radio-group">
+                        <input type="radio" id="year-3" name="year" value="3">
+                        <label for="year-3">3</label>
+                      </div>
+                      <div class="radio-group">
+                        <input type="radio" id="year-4" name="year" value="4">
+                        <label for="year-4">4</label>
+                      </div> 
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="department">Department</label>
+                    <select id="department" required>
+                      <option value="" disabled selected>Select Department</option>
+                      <option value="cs">Computer Science</option>
+                      <option value="it">Information Technology</option>
+                      <option value="ece">Electronics & Communication</option>
+                      <option value="eee">Electrical & Electronics</option>
+                      <option value="mech">Mechanical Engineering</option>
+                      <option value="civil">Civil Engineering</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                  <div style="margin-top: 1.5rem;">
+                    <button type="button" class="btn btn-primary next-step">NEXT STEP</button>
+                  </div>
+                </form>
+              </div>
+
+              <!-- Step 2: Select Events -->
+              <div class="registration-step" style="display: none;">
+                <h2>Select Events</h2>
+                <div style="margin-top: 1.5rem;">
+                  <div style="margin-bottom: 1.5rem;">
+                    <h3>Technical Events</h3>
+                    <div style="margin-top: 1rem;">
+                      <div class="checkbox-group">
+                        <input type="checkbox" id="project-expo" name="events" value="project-expo">
+                        <label for="project-expo">Project Expo</label>
+                      </div>
+                      <div class="checkbox-group">
+                        <input type="checkbox" id="innovation-ideas" name="events" value="innovation-ideas">
+                        <label for="innovation-ideas">Innovation Ideas</label>
+                      </div>
+                      <div class="checkbox-group">
+                        <input type="checkbox" id="data-science-battle" name="events" value="data-science-battle">
+                        <label for="data-science-battle">Data Science Battle</label>
+                      </div>
+                      <div class="checkbox-group">
+                        <input type="checkbox" id="code-relay" name="events" value="code-relay">
+                        <label for="code-relay">Code Relay</label>
+                      </div>
+                      <div class="checkbox-group">
+                        <input type="checkbox" id="tech-quiz" name="events" value="tech-quiz">
+                        <label for="tech-quiz">Quiz</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <h3>Non-Technical Events</h3>
+                    <div style="margin-top: 1rem;">
+                      <div class="checkbox-group">
+                        <input type="checkbox" id="esports" name="events" value="esports">
+                        <label for="esports">Esports - PUBG, FreeFire</label>
+                      </div>
+                      <div class="checkbox-group">
+                        <input type="checkbox" id="morse-code" name="events" value="morse-code">
+                        <label for="morse-code">Morse Code Solving</label>
+                      </div>
+                      <div class="checkbox-group">
+                        <input type="checkbox" id="board-games" name="events" value="board-games">
+                        <label for="board-games">Board Games - Chess, Carroms</label>
+                      </div>
+                      <div class="checkbox-group">
+                        <input type="checkbox" id="non-tech-quiz" name="events" value="non-tech-quiz">
+                        <label for="non-tech-quiz">Quiz - Movie/Song/Sports</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-actions">
+                    <button type="button" class="btn btn-outline prev-step">PREVIOUS</button>
+                    <button type="button" class="btn btn-primary next-step">NEXT STEP</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Step 3: Payment & Confirmation -->
+              <div class="registration-step" style="display: none;">
+                <h2>Payment & Confirmation</h2>
+                <div style="margin-top: 1.5rem;">
+                  <div class="summary-box neo-brutalism">
+                    <h3>Registration Summary</h3>
+                    <div style="margin-top: 1rem;">
+                      <p><strong>Selected Events:</strong> <span id="selected-events-count">0</span> events</p>
+                      <p><strong>Registration Fee:</strong> ₹99</p>
+                    </div>
+                  </div>
+                  <div style="margin-top: 1.5rem;">
+                    <h3>Payment Method</h3>
+                    <div style="margin-top: 1rem;">
+                      <div class="radio-group">
+                        <input type="radio" id="upi" name="payment" value="upi" checked>
+                        <label for="upi">UPI</label>
+                      </div>
+                      <div class="radio-group">
+                        <input type="radio" id="card" name="payment" value="card">
+                        <label for="card">Credit/Debit Card</label>
+                      </div>
+                      <div class="radio-group">
+                        <input type="radio" id="netbanking" name="payment" value="netbanking">
+                        <label for="netbanking">Net Banking</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="margin-top: 1.5rem;">
+                    <div class="checkbox-group">
+                      <input type="checkbox" id="terms" required>
+                      <label for="terms">
+                        I agree to the <a href="#" style="color: var(--primary); text-decoration: underline;">terms and conditions</a>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-actions">
+                    <button type="button" class="btn btn-outline prev-step">PREVIOUS</button>
+                    <button type="submit" class="btn btn-primary">COMPLETE REGISTRATION</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center" style="margin-top: 2rem;">
+            <p>
+              Need help with registration?
+              <a href="contact.html" style="color: var(--primary); text-decoration: underline;">Contact us</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>TECHSPARKS</h3>
+          <p>
+            Join us for an exciting day of technology, innovation, and fun at
+            our department's annual TechFest.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <div class="footer-links">
+            <a href="events.html">Events</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="register.html">Register</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Connect With Us</h3>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+          <p style="margin-top: 1rem;">
+            Email: <a href="mailto:info@techsparks.com">info@techsparks.com</a>
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 TechSparks. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/TechSparks-2K25/js/script.js"></script>
+</body>
+</html>
+
