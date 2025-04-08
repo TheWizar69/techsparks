@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const countdownSection = countdownElement?.closest('section')
 
   if (countdownElement && countdownSection) {
-    const eventDate = new Date("April 22, 2025 00:00:00").getTime()
+    const eventDate = new Date("April 24, 2025 10:00:00").getTime()
     const now = new Date().getTime()
 
     if (now >= eventDate) {
